@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Мега Прикладные Крестики-Нолики</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="public/css/styles.css">
+        <script src="public/js/Server.js"></script>
+        <script src="public/js/Graph.js"></script>
+        <script src="public/js/main.js"></script>
+    </head>
+    <body>
+        <h1>Мега Прикладные Крестики-Нолики</h1>
+        <div id="auth" >
+            <h1>Авторизация</h1>
+            <input id="login" placeholder="Логин"><br>
+            <input id="password" placeholder="Пароль" type="password"><br>
+            <button id="loginButton">Войти</button>
+            <button id = "registrationButton">Зарегистрироваться</button>
+        </div>
+        <div id = "initialWindow" style="display:none">
+            <h1 >Свободные игроки</h1>
+            <ul id="freeUsers"></ul>
+            <div id="acceptParty" style="display:none">
+                <p>Тебя вызвали на поединок!</p>
+                <p>PvP или зассал?</p>
+                <button id="yesParty">Иди сюда!</button>
+                <button id="noParty">Иди нафиг!</button>
+            </div>
+        </div>
+        
+        <div id = "gameField" style="display:none" >
+            <h1>Игра Началась</h1>
+            <canvas id="canvas" width="540" height="540"></canvas>
+        </div>
+        <button id = "logoutButton" style="display:none">Выход</button>
+    </body>
+</html>
